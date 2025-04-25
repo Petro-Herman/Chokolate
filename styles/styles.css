@@ -1,43 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+/* ====================*===============
+=====================header============ */
 .header {
 }
+
 .logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111;
 }
+
+.logo span {
+  font-style: italic;
+}
+
 .header-list {
 }
 .header-item {
 }
+
 .header-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #111;
 }
+
 .header-nav {
 }
 .header-nav-item {
 }
+/* =============header==========
+=================hero=========== */
 .hero {
+  background: rgba(17, 17, 17, 0.6);
 }
+
 .hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
 }
+
 .hero-btn-buy {
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+  padding: 14px 40px;
+  width: 144px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
 }
+
+.hero-btn-buy:hover {
+  background: #fcf1e0;
+  color: #fd9222;
+}
+
 .hero-link-how {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 183px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
 }
+
+.hero-link-how:hover {
+  border: 1px solid #fd9222;
+  color: #fd9222;
+}
+
 .hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #fff;
 }
+/* ===========hero==========
+=============about========== */
 .about {
+  background: #1e1823;
 }
+
+.about > h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .about-list {
 }
 .about-item {
 }
+
 .about-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
 }
+
 .about-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
 }
+
+/* =============about==========
+================taste========== */
+
 .taste {
 }
+
 .taste-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
 }
+
 .tst {
+  color: #fd9222;
 }
+
 .taste-text {
 }
 .taste-list {
@@ -46,26 +178,67 @@
 }
 .taste-item-img {
 }
+
 .taste-item-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
 }
+
+/* =============taste==========
+=================how=========== */
 .how {
 }
+
 .how-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
 }
+
 .how-made {
 }
+
 .how-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
 }
+
 .how-list {
 }
 .how-item {
 }
+
 .how-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
 }
+
+/* =============how===========
+==========our products======== */
 .our-products {
 }
+
 .products-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
 }
+
 .products {
 }
 .products-list {
@@ -74,28 +247,79 @@
 }
 .products-item-img {
 }
+
 .products-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
 }
+
 .products-item-text {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
 }
+
 .products-item-btn {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: 94px;
+  height: 33px;
+  background: #fafafa;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
 }
+
+/* ===========our products=========
+==============top sellers========== */
 .top-sellers {
 }
+
 .sellers-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
 }
+
 .top {
 }
 .sellers-list {
 }
 .sellers-item-img {
 }
+
 .sellers-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
 }
+
+/* ==============top sellers===========
+====================loved============== */
 .loved {
 }
+
 .loved-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
 }
+
 .chocolate {
 }
 .loved-list {
@@ -104,12 +328,83 @@
 }
 .loved-item-img {
 }
+
 .loved-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
 }
+
 .loved-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
 }
+
 .loved-btn {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
 }
+
+.loved-btn:hover {
+  background: #fd9222;
+  color: #fff;
+}
+/* .loved-btn:active {
+  background-color: aqua;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+} */
+
+/* ===============loved============
+==================footer=========== */
+
+footer {
+  background: #1e1823;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-item-link {
+  color: #fff;
+}
+
+.contacts-footer-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+}
+
+.contacts-footer-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-soc-icon {
+  color: #fff; /*тимчасово*/
+}
+
 .contacts-footer {
 }
 .contacts-footer-item {
