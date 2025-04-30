@@ -11,23 +11,50 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
 ul {
   list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
+
+address {
+  font-style: normal;
+}
+
 button {
   cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 /* ====================*===============
 =====================header============ */
 .header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.header-wrap {
+  display: flex;
 }
 
 .logo {
@@ -36,14 +63,27 @@ button {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  display: flex;
+  align-items: center;
 }
 
 .logo span {
   font-style: italic;
 }
 
-.header-list {
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-right: 90px;
 }
+
+.header-list {
+  display: flex;
+  gap: 24px;
+}
+
 .header-item {
 }
 
@@ -56,13 +96,22 @@ button {
 }
 
 .header-nav {
+  display: flex;
+  gap: 14px;
 }
+
 .header-nav-item {
 }
 /* =============header==========
 =================hero=========== */
 .hero {
+  margin-bottom: 80px;
+}
+
+.hero-wrap {
+  padding: 380px 40px 40px 40px;
   background: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -71,6 +120,13 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  max-width: 484px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .hero-btn-buy {
@@ -78,11 +134,13 @@ button {
   border-radius: 100px;
   border: none;
   padding: 14px 40px;
-  width: 144px;
-  height: 45px;
+  /* width: 144px;
+  height: 45px; */
+  padding: 14px 40px;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  margin-right: 14px;
 }
 
 .hero-btn-buy:hover {
@@ -94,8 +152,9 @@ button {
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 14px 40px;
-  width: 183px;
-  height: 45px;
+  /* width: 183px;
+  height: 45px; */
+  padding: 14px 40px;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -112,14 +171,17 @@ button {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 /* ===========hero==========
 =============about========== */
 .about {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.about > h2 {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -133,14 +195,21 @@ button {
 }
 
 .about-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
+
 .about-item {
+  width: calc((100% - 2 * 88px) / 3);
 }
 
 .about-item-title {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .about-item-text {
@@ -154,6 +223,8 @@ button {
 ================taste========== */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .taste-title {
@@ -164,6 +235,9 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .tst {
@@ -171,12 +245,33 @@ button {
 }
 
 .taste-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
+
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 24px;
+  /* gap: 24px 32px; */
 }
+
 .taste-item {
+  background-color: #fd9222;
+  border-radius: 15px;
+  width: calc((100% - 3 * 32px) / 4);
+  padding: 28px 23px;
 }
+
 .taste-item-img {
+  margin-bottom: 36px;
 }
 
 .taste-item-title {
@@ -185,6 +280,7 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
+  padding-left: 5px;
 }
 
 /* =============taste==========
