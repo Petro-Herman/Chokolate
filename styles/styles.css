@@ -4,6 +4,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 h1,
@@ -314,9 +315,20 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
 
 .how-made {
+}
+
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.made-content {
+  padding: 32px;
+  background-color: #fff;
 }
 
 .how-text {
@@ -324,11 +336,32 @@ img {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
 
 .how-list {
 }
+
 .how-item {
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.how-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.how-item:last-child {
+  margin-bottom: 0;
 }
 
 .how-item-text {
@@ -536,6 +569,15 @@ img {
 
 footer {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
 }
 
 .footer-title {
@@ -544,6 +586,8 @@ footer {
   line-height: 1.22;
   letter-spacing: -0.02em;
   color: #fff;
+  max-width: 300px;
+  margin-right: auto;
 }
 
 .footer-item-link {
@@ -563,15 +607,272 @@ footer {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
+  margin-bottom: 14px;
 }
 
 .footer-soc-icon {
   color: #fff; /*тимчасово*/
 }
 
+.footer-soc {
+  margin-right: 50px;
+}
+
+.footer-contact-icon {
+  fill: transparent;
+  stroke: #fff;
+}
+
 .contacts-footer {
 }
 .contacts-footer-item {
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 13px 24px;
+  width: 313px;
+  height: 52px;
+  background-color: transparent;
+}
+
+.footer-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-form-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 17px 40px;
+  border: none;
+  /* width: 137px;
+  height: 52px; */
+  background: #fd9222;
+  transition-property: background, color;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+
+.footer-form-btn:hover {
+  background: #fcf1e0;
+  color: #fd9222;
+}
+
+/* ======================footer===============
+==========================modal=============== */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(30, 24, 35, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  width: 517px;
+  min-height: 794px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  max-width: 298px;
+  margin-bottom: 40px;
+}
+
+.modal-title span {
+  color: #fd9222;
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 68px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  padding: 22px 24px 22px 62px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.modal-input::placeholder {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.2);
+  transition: color 300ms linear;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus::placeholder {
+  color: #fd9222;
+}
+
+.modal-label[data-required="true"]::after {
+  content: " *";
+  color: red;
+}
+
+.modal-icon {
+  fill: transparent;
+  stroke: #404040;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: stroke 300ms linear;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+}
+
+.modal-label {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-text {
+  padding: 22px 24px;
+  height: 137px;
+  resize: none;
+}
+
+.modal-submit {
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 117px;
+  height: 45px;
+  background: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+}
+
+.modal-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.check-text span {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  margin-right: 12px;
+  fill: transparent;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+}
+
+/* .modal-check-icon */
+
+.modal-check:checked + .check-text span {
+  background-color: #fd9222;
+  border: none;
+  fill: #fff;
+}
+
+/* ======================modal===============
+=========================check=============== */
+
+.checkbox-theme {
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-theme::before {
+  content: "";
+  width: 40px;
+  height: 22px;
+  border: 1px solid #df9930;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.checkbox-theme::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #f0ab45;
+  border-radius: 50%;
+  transition-duration: 300ms;
+}
+
+.theme-checkbox-input:checked + .checkbox-theme::after {
+  transform: translate(18px);
 }
