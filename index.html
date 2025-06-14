@@ -82,7 +82,7 @@
       </section>
     </header> -->
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero-wrap">
             <h1 class="hero-title">
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="about">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -218,11 +218,31 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="how" id="how-made">
+      <section class="how" id="how-made">
         <div class="container">
           <h2 class="how-title">hOW IT’S <span class="tst">made?</span></h2>
           <div class="made-wrap">
-            <img src="./img/made.jpg" alt="milk" width="600" height="400" />
+            <picture>
+              <source
+                srcset="./img/made-2x.jpg 2x, ./img/made.jpg 1x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/made-2x.jpg 2x, ./img/made.jpg 1x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/made-mob-2x.jpg 2x, ./img/made-mob.jpg 1x"
+                media="(min-width: 375px)"
+              />
+              <img
+                class="made-image"
+                src="./img/made.jpg"
+                alt="milk"
+                width="614"
+                height="400"
+              />
+            </picture>
             <div class="made-content">
               <h3 class="how-text">
                 Try our chocolates today and discover the perfect balance of
@@ -263,8 +283,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="our-products">
+      </section>
+      <section class="our-products">
         <div class="container">
           <h2 class="products-title">Our <span class="tst">pRODUCTS</span></h2>
           <ul class="products-list">
@@ -366,7 +386,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="top-sellers">
         <div class="container">
           <h2 class="sellers-title"><span class="tst">tOp</span> Sellers</h2>
