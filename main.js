@@ -22,33 +22,6 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-// const openMenuBtn = document.querySelector(".mob-menu-btn");
-// const closeMenuBtn = document.querySelector(".mob-menu-close");
-// const mobMenu = document.querySelector(".mob-menu");
-// const menuLinks = document.querySelectorAll(".mob-item-link .mob-nav-item a");
-
-// function openMenu() {
-//   mobMenu.classList.add("is-open");
-//   document.body.classList.add("modal-open");
-// }
-
-// function closeMenu() {
-//   mobMenu.classList.remove("is-open");
-//   document.body.classList.remove("modal-open");
-// }
-
-// openMenuBtn.addEventListener("click", openMenu);
-// closeMenuBtn.addEventListener("click", closeMenu);
-
-// menuLinks.forEach((link) => {
-//   link.addEventListener("click", closeMenu);
-// });
-
-// mobMenu.addEventListener("click", (e) => {
-//   if (!e.target.closest(".mob-menu-wrap")) {
-//     closeMenu();
-//   }
-// });
 const openMenuBtn = document.querySelector(".mob-menu-btn");
 const closeMenuBtn = document.querySelector(".mob-menu-close");
 const mobMenu = document.querySelector(".mob-menu");
@@ -71,9 +44,16 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
 
-// Клік за межами .mob-menu-wrap закриває меню
 mobMenu.addEventListener("click", (event) => {
   if (!event.target.closest(".mob-menu-wrap")) {
     closeMenu();
   }
 });
+
+// =================================darkTheme
+
+// const toggle = document.getElementById("theme-toggle");
+
+// toggle.addEventListener("change", () => {
+//   document.body.classList.toggle("dark-theme");
+// });

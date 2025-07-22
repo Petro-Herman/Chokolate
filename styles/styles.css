@@ -2,9 +2,21 @@
   box-sizing: border-box;
 }
 
+/* =========================darkTheme */
+/* :root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+} */
+/* =========================darkTheme */
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
+  /* =================================darkTheme */
+  /* background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; */
+  /* =========================darkTheme */
 }
 
 body.modal-open {
@@ -59,8 +71,27 @@ img {
   overflow: hidden;
 }
 
-/* ====================*===============
-=====================header============ */
+/* ====================*=============== */
+/* =========================darkTheme */
+
+/* body.dark-theme {
+  --bg-color: #1e1823;
+  --text-color: #ffffff;
+}
+
+.theme-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.theme-switch input {
+  cursor: pointer;
+} */
+/* =========================darkTheme */
+
+/* =====================header============ */
 .header {
   padding-top: 20px;
   padding-bottom: 14px;
@@ -96,8 +127,8 @@ img {
   gap: 24px;
 }
 
-.header-item {
-}
+/* .header-item {
+} */
 
 .header-item-link {
   font-weight: 500;
@@ -112,8 +143,8 @@ img {
   gap: 14px;
 }
 
-.header-nav-item {
-}
+/* .header-nav-item {
+} */
 
 .header-contact-icon {
   fill: transparent;
@@ -872,8 +903,8 @@ img {
 /* ==============top sellers===========
 ====================loved============== */
 
-.loved {
-}
+/* .loved {
+} */
 
 .loved-title {
   font-weight: 600;
@@ -887,8 +918,8 @@ img {
   margin-bottom: 98px;
 }
 
-.chocolate {
-}
+/* .chocolate {
+} */
 
 .loved-list {
   display: flex;
@@ -1053,10 +1084,10 @@ footer {
   height: 20px;
 }
 
-.contacts-footer {
-}
-.contacts-footer-item {
-}
+/* .contacts-footer {
+} */
+/* .contacts-footer-item {
+} */
 
 .footer-bottom {
   padding-top: 32px;
@@ -1298,14 +1329,14 @@ footer {
 /* ======================modal===============
 =========================check=============== */
 
-.checkbox-theme {
+.theme-switch {
   position: relative;
   font-size: 14px;
   display: flex;
   align-items: center;
 }
 
-.checkbox-theme::before {
+.theme-switch::before {
   content: "";
   width: 40px;
   height: 22px;
@@ -1314,7 +1345,7 @@ footer {
   margin-right: 8px;
 }
 
-.checkbox-theme::after {
+.theme-switch::after {
   content: "";
   position: absolute;
   left: 2px;
@@ -1326,7 +1357,7 @@ footer {
   transition-duration: 300ms;
 }
 
-.theme-checkbox-input:checked + .checkbox-theme::after {
+.theme-checkbox-input:checked + .theme-switch::after {
   transform: translate(18px);
 }
 
