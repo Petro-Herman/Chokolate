@@ -22,7 +22,7 @@
       <section class="header">
         <div class="container header-wrap">
           <nav class="header-navigation">
-            <a href="" class="logo"
+            <a href="/" class="logo"
               ><span>SIMPLY</span> CHOCOLATE
               <img
                 src="./img/chocolate-icon-title.png"
@@ -33,13 +33,13 @@
             </a>
             <ul class="header-list">
               <li class="header-item">
-                <a href="" class="header-item-link">Home</a>
+                <a href="/" class="header-item-link">Home</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-item-link">How it’s made?</a>
+                <a href="#how-made" class="header-item-link">How it’s made?</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-item-link">Chocolate is loved</a>
+                <a href="#loved" class="header-item-link">Chocolate is loved</a>
               </li>
             </ul>
           </nav>
@@ -83,19 +83,26 @@
               <use href="./img/icons.svg#icon-menu"></use>
             </svg>
           </button>
+          <!-- <div class="mob-menu-backdrop"> -->
           <div class="mob-menu">
             <div class="mob-menu-wrap">
-              <button class="mob-menu-close" type="button">X</button>
+              <button class="mob-menu-close" type="button">
+                <svg class="icon-menu-close" width="28" height="28">
+                  <use href="./img/icons.svg#icon-x"></use>
+                </svg>
+              </button>
               <nav class="mob-menu-nav">
                 <ul class="mob-list">
                   <li class="mob-item">
-                    <a href="" class="mob-item-link">Home</a>
+                    <a href="/" class="mob-item-link">Home</a>
                   </li>
                   <li class="mob-item">
-                    <a href="" class="mob-item-link">How it’s made?</a>
+                    <a href="#how-made" class="mob-item-link">How it’s made?</a>
                   </li>
                   <li class="mob-item">
-                    <a href="" class="mob-item-link">Chocolate is loved</a>
+                    <a href="#loved" class="mob-item-link"
+                      >Chocolate is loved</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -136,6 +143,7 @@
               </li>
             </ul>
           </div>
+          <!-- </div> -->
         </div>
       </section>
     </header>
@@ -150,7 +158,12 @@
             <div class="hero-buttons">
               <button type="button" class="hero-btn-buy">Buy now</button>
               <a href="#how-made" class="hero-link-how">How it’s made</a>
-              <a href="" class="hero-text">scroll down</a>
+              <a href="#taste" class="hero-text"
+                >scroll down
+                <svg class="hero-down-icon" width="16" height="16">
+                  <use href="./img/icons.svg#icon-down"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -199,7 +212,7 @@
           </ul>
         </div>
       </section>
-      <section class="taste">
+      <section class="taste" id="taste">
         <div class="container">
           <h2 class="taste-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL
@@ -211,112 +224,250 @@
             ingredients to the careful crafting of each individual piece, every
             step of our process adds up to one exceptional taste sensation.
           </p>
-          <ul class="taste-list">
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/milk-chocolate.png"
-                alt="MILK CHOCOLATE"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">MILK CHOCOLATE</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/milk.png"
-                alt="MILK"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">MILK</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/nuts.png"
-                alt="NUTS"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">NUTS</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/sweet-chocolate.png"
-                alt="SEMI - SWEET CHOCOLATE"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">SEMI - SWEET CHOCOLATE</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/cacao.png"
-                alt="CACAO"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">CACAO</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/raspberry.png"
-                alt="RASPBERRY"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">RASPBERRY</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/cocnut-oil.png"
-                alt="COCONUT OIL"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">COCONUT OIL</h3>
-            </li>
-            <li class="taste-item">
-              <svg class="taste-item-right" width="24" height="24">
-                <use href="./img/icons.svg#icon-right"></use>
-              </svg>
-              <img
-                src="./img/vanilla.png"
-                alt="VANILLA"
-                class="taste-item-img"
-                width="214"
-                height="160"
-              />
-              <h3 class="taste-item-title">VANILLA</h3>
-            </li>
-          </ul>
+          <div>
+            <ul class="taste-list">
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/milk-chocolate.png"
+                      alt="MILK CHOCOLATE"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">MILK CHOCOLATE</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">Milk chocolate</h3>
+                    <p class="wrap-text-orange">chocolate</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Milk chocolate is a solid chocolate confectionery
+                      containing cocoa, sugar and milk. It is the most consumed
+                      type of chocolate. Chocolate was originally sold and
+                      consumed as a beverage in pre-Columbian times. Although
+                      four-fifths of all milk chocolate is sold in the United
+                      States and Europe.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/milk.png"
+                      alt="MILK"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">MILK</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">Milk</h3>
+                    <p class="wrap-text-orange">milk</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Milk is a white liquid food produced by the mammary glands
+                      of mammals. It is the primary source of nutrition for
+                      young mammals (including breastfed human infants) before
+                      they are able to digest solid food.Early-lactation milk,
+                      which is called colostrum, contains antibodies that
+                      strengthen the immune system.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/nuts.png"
+                      alt="NUTS"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">NUTS</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">Nuts</h3>
+                    <p class="wrap-text-orange">nuts</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Almonds, pistachios, and walnuts are some types of nuts
+                      that contain healthy nutrients. When eaten as part of a
+                      nutrient-dense diet, these 9 nuts may offer benefits such
+                      as reducing your risk of heart disease. They’re a good
+                      source of fiber, healthy fats, and plant protein. Plus,
+                      they’re great on their own.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/sweet-chocolate.png"
+                      alt="SEMI - SWEET CHOCOLATE"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">SEMI - SWEET CHOCOLATE</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">semi - sweet chocolate</h3>
+                    <p class="wrap-text-orange">sweet chocolate</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Semi-sweet chocolate has a cocoa solid content of 35 to
+                      65%. One of the best ways to gain an understanding of this
+                      type of chocolate is to compare it to a different type of
+                      chocolate. Semisweet is darker than milk chocolate. In a
+                      taste comparison, it has a slightly bitter taste whereas
+                      milk chocolate is sweeter.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/cacao.png"
+                      alt="CACAO"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">CACAO</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">Cacao</h3>
+                    <p class="wrap-text-orange">cacao</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Cocoa is a natural product obtained from the fruits of the
+                      cocoa tree (Theobroma cacao). This tropical fruit contains
+                      beans, from which cocoa mass, cocoa powder and chocolate
+                      are made. The history of the use of cocoa goes back to
+                      ancient times. Already in ancient Mesoamerica, the Mayan
+                      and Aztec civilizations used cocoa in their culture and
+                      rituals
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/raspberry.png"
+                      alt="RASPBERRY"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">RASPBERRY</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">Raspberry</h3>
+                    <p class="wrap-text-orange">raspberry</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Raspberry is a tasty and aromatic berry plant that is
+                      popular all over the world. It belongs to the pink family
+                      and grows in many regions, including North America, Europe
+                      and Asia. Raspberries have many varieties and color
+                      variations, from red to yellow and black.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/cocnut-oil.png"
+                      alt="COCONUT OIL"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">COCONUT OIL</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">COCONUT OIL</h3>
+                    <p class="wrap-text-orange">coconut oil</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Cocoa is a natural product obtained from the fruits of the
+                      cocoa tree (Theobroma cacao). This tropical fruit contains
+                      beans, from which cocoa mass, cocoa powder and chocolate
+                      are made. The history of the use of cocoa goes back to
+                      ancient times. Already in ancient Mesoamerica, the Mayan
+                      and Aztec civilizations used cocoa in their culture and
+                      rituals
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="taste-item">
+                <div class="taste-item-inner">
+                  <div class="taste-item-front">
+                    <svg class="taste-item-right" width="24" height="24">
+                      <use href="./img/icons.svg#icon-right"></use>
+                    </svg>
+                    <img
+                      src="./img/vanilla.png"
+                      alt="VANILLA"
+                      class="taste-item-img"
+                      width="214"
+                      height="160"
+                    />
+                    <h3 class="taste-item-title">VANILLA</h3>
+                  </div>
+                  <div class="taste-item-back">
+                    <h3 class="item-wrap-title">VANILLA</h3>
+                    <p class="wrap-text-orange">vanilla</p>
+                    <p class="wrap-text-top">the benefits</p>
+                    <p class="item-wrap-text">
+                      Vanilla is one of the most popular flavorings and
+                      seasonings in the world. It is obtained from the fruits of
+                      the tropical orchid Vanilla planifolia. Vanilla has a rich
+                      history of use as a seasoning, perfume component, and raw
+                      material for the production of confectionery.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="how" id="how-made">
@@ -388,170 +539,174 @@
       <section class="our-products">
         <div class="container">
           <h2 class="products-title">Our <span class="tst">pRODUCTS</span></h2>
-          <ul class="products-list">
-            <li class="products-item">
-              <img
-                src="./img/our-products1.jpg"
-                alt="orange "
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">orange</h3>
-              <p class="products-item-text">Dark chocolate</p>
-              <button type="button" class="products-item-btn">45 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products2.jpg"
-                alt="APPLE&CRANBERRY"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">APPLE&CRANBERRY</h3>
-              <p class="products-item-text">Milk chocolate</p>
-              <button type="button" class="products-item-btn">50 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products3.jpg"
-                alt="lime&sea salt"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">lime&sea salt</h3>
-              <p class="products-item-text">Dark chocolate</p>
-              <button type="button" class="products-item-btn">66 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products4.jpg"
-                alt="pineapple"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">pineapple</h3>
-              <p class="products-item-text">Dark chocolate</p>
-              <button type="button" class="products-item-btn">54 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products5.jpg"
-                alt="Classic"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">Classic</h3>
-              <p class="products-item-text">Milk chocolate</p>
-              <button type="button" class="products-item-btn">45 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products6.jpg"
-                alt="honey"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">honey</h3>
-              <p class="products-item-text">Milk chocolate</p>
-              <button type="button" class="products-item-btn">50 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products7.jpg"
-                alt="Roasted fruits"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">Roasted fruits</h3>
-              <p class="products-item-text">Dark chocolate</p>
-              <button type="button" class="products-item-btn">66 UAH</button>
-            </li>
-            <li class="products-item">
-              <img
-                src="./img/our-products8.jpg"
-                alt="Classic"
-                class="products-item-img"
-                width="230"
-                height="201"
-              />
-              <h3 class="products-item-title">Classic</h3>
-              <p class="products-item-text">White chocolate</p>
-              <button type="button" class="products-item-btn">54 UAH</button>
-            </li>
-          </ul>
+          <div>
+            <ul class="products-list">
+              <li class="products-item">
+                <img
+                  src="./img/our-products1.jpg"
+                  alt="orange "
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">orange</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">45 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products2.jpg"
+                  alt="APPLE&CRANBERRY"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">APPLE&CRANBERRY</h3>
+                <p class="products-item-text">Milk chocolate</p>
+                <button type="button" class="products-item-btn">50 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products3.jpg"
+                  alt="lime&sea salt"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">lime&sea salt</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">66 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products4.jpg"
+                  alt="pineapple"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">pineapple</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">54 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products5.jpg"
+                  alt="Classic"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">Classic</h3>
+                <p class="products-item-text">Milk chocolate</p>
+                <button type="button" class="products-item-btn">45 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products6.jpg"
+                  alt="honey"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">honey</h3>
+                <p class="products-item-text">Milk chocolate</p>
+                <button type="button" class="products-item-btn">50 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products7.jpg"
+                  alt="Roasted fruits"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">Roasted fruits</h3>
+                <p class="products-item-text">Dark chocolate</p>
+                <button type="button" class="products-item-btn">66 UAH</button>
+              </li>
+              <li class="products-item">
+                <img
+                  src="./img/our-products8.jpg"
+                  alt="Classic"
+                  class="products-item-img"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="products-item-title">Classic</h3>
+                <p class="products-item-text">White chocolate</p>
+                <button type="button" class="products-item-btn">54 UAH</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="top-sellers">
         <div class="container">
           <h2 class="sellers-title"><span class="tst">tOp</span> Sellers</h2>
-          <ul class="sellers-list">
-            <li class="sellers-item">
-              <div class="sellers-cover-wrap">
-                <img
-                  src="./img/sellers1.jpg"
-                  alt="CHOCOLATE WITH NUTS"
-                  class="sellers-item-img"
-                  width="368"
-                  height="464"
-                />
-                <p class="sellers-item-text">
-                  Chocolate with nuts is a delectable combination that brings
-                  together the smoothness of chocolate and the crunchiness of
-                  nuts. Whether it's milk chocolate, dark chocolate, or white
-                  chocolate, the addition of nuts adds a whole new dimension of
-                  flavor and texture.
-                </p>
-              </div>
-              <h3 class="sellers-item-title">CHOCOLATE WITH NUTS</h3>
-            </li>
-            <li class="sellers-item">
-              <div class="sellers-cover-wrap">
-                <img
-                  src="./img/sellers2.jpg"
-                  alt="CHOCOLATE WITH FRUITS"
-                  class="sellers-item-img"
-                  width="368"
-                  height="464"
-                />
-                <p class="sellers-item-text">
-                  Chocolate with fruit is an unbeatable combination of two of
-                  the tastiest things in the world. This dessert combines
-                  delicate and aromatic chocolate with fresh and juicy fruits,
-                  creating a true poetry of taste.
-                </p>
-              </div>
-              <h3 class="sellers-item-title">CHOCOLATE WITH FRUITS</h3>
-            </li>
-            <li class="sellers-item">
-              <div class="sellers-cover-wrap">
-                <img
-                  src="./img/sellers3.jpg"
-                  alt="DARK CHOCOLATE"
-                  class="sellers-item-img"
-                  width="368"
-                  height="464"
-                />
-                <p class="sellers-item-text">
-                  Dark chocolate is a rich and indulgent treat that is beloved
-                  by many chocolate enthusiasts. It is made from cocoa beans,
-                  which are roasted, ground, and then processed to produce
-                  chocolate liquor. Dark chocolate contains a higher percentage
-                  of cocoa solids compared to milk chocolate.
-                </p>
-              </div>
-              <h3 class="sellers-item-title">DARK CHOCOLATE</h3>
-            </li>
-          </ul>
+          <div>
+            <ul class="sellers-list">
+              <li class="sellers-item">
+                <div class="sellers-cover-wrap">
+                  <img
+                    src="./img/sellers1.jpg"
+                    alt="CHOCOLATE WITH NUTS"
+                    class="sellers-item-img"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="sellers-item-text">
+                    Chocolate with nuts is a delectable combination that brings
+                    together the smoothness of chocolate and the crunchiness of
+                    nuts. Whether it's milk chocolate, dark chocolate, or white
+                    chocolate, the addition of nuts adds a whole new dimension
+                    of flavor and texture.
+                  </p>
+                </div>
+                <h3 class="sellers-item-title">CHOCOLATE WITH NUTS</h3>
+              </li>
+              <li class="sellers-item">
+                <div class="sellers-cover-wrap">
+                  <img
+                    src="./img/sellers2.jpg"
+                    alt="CHOCOLATE WITH FRUITS"
+                    class="sellers-item-img"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="sellers-item-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+                <h3 class="sellers-item-title">CHOCOLATE WITH FRUITS</h3>
+              </li>
+              <li class="sellers-item">
+                <div class="sellers-cover-wrap">
+                  <img
+                    src="./img/sellers3.jpg"
+                    alt="DARK CHOCOLATE"
+                    class="sellers-item-img"
+                    width="368"
+                    height="464"
+                  />
+                  <p class="sellers-item-text">
+                    Dark chocolate is a rich and indulgent treat that is beloved
+                    by many chocolate enthusiasts. It is made from cocoa beans,
+                    which are roasted, ground, and then processed to produce
+                    chocolate liquor. Dark chocolate contains a higher
+                    percentage of cocoa solids compared to milk chocolate.
+                  </p>
+                </div>
+                <h3 class="sellers-item-title">DARK CHOCOLATE</h3>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="loved">
+      <section class="loved" id="loved">
         <div class="container">
           <h2 class="loved-title">
             <span class="tst">chocolate</span> is loved
@@ -823,5 +978,6 @@
       />
       <label for="theme" class="checkbox-theme"></label>
     </div> -->
+    <script src="./main.js" defer></script>
   </body>
 </html>
