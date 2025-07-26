@@ -74,24 +74,44 @@ img {
 /* ====================*=============== */
 /* =========================darkTheme */
 
-/* body.dark-theme {
-  --bg-color: #1e1823;
-  --text-color: #ffffff;
+body.dark-theme {
+  background-color: #4c4c4c;
+  /* --bg-color: #1e1823;
+  --text-color: #ffffff; */
 }
 
-.theme-switch {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
+body.dark-theme .logo,
+body.dark-theme .header-item-link,
+body.dark-theme .checkbox p,
+body.dark-theme .header-contact-icon,
+body.dark-theme h2,
+body.dark-theme .taste-text,
+body.dark-theme .how-item-text,
+body.dark-theme .sellers-item-title,
+body.dark-theme .loved-item-title,
+body.dark-theme .loved-item-text,
+body.dark-theme .loved-btn,
+body.dark-theme .made-content h3 {
+  color: #fff;
 }
 
-.theme-switch input {
-  cursor: pointer;
-} */
+body.dark-theme .made-content,
+body.dark-theme .loved-item-text {
+  background-color: #1d1c1c;
+}
+
+body.dark-theme .loved-btn {
+  background-color: transparent;
+}
+
+body.dark-theme .header-contact-icon {
+  stroke: #fff;
+}
+
 /* =========================darkTheme */
 
 /* =====================header============ */
+
 .header {
   padding-top: 20px;
   padding-bottom: 14px;
@@ -666,6 +686,11 @@ img {
   flex-wrap: wrap;
 }
 
+picture {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
 .made-wrap picture {
   flex-shrink: 0;
   width: 100%;
@@ -841,6 +866,8 @@ img {
 .sellers-item {
   /* width: calc((100% - 16px * 2) / 3); */
   border: 15px 15px 0 0;
+  overflow: hidden;
+  border-radius: 15px;
   /* ================ */
   flex: 0 0 auto;
   scroll-snap-align: start;
@@ -950,6 +977,8 @@ img {
   /* margin: 0 auto; */
   margin-inline: auto;
   margin-block-end: 18px;
+  overflow: hidden;
+  border-radius: 50%;
   /* margin-bottom: 18px; */
 }
 
@@ -1329,37 +1358,73 @@ footer {
 /* ======================modal===============
 =========================check=============== */
 
-.theme-switch {
-  position: relative;
-  font-size: 14px;
+.checkbox {
   display: flex;
   align-items: center;
+  gap: 4px;
+  margin-right: 4px;
+}
+.checkbox p {
+  font-size: 13px;
 }
 
-.theme-switch::before {
-  content: "";
-  width: 40px;
-  height: 22px;
-  border: 1px solid #df9930;
-  border-radius: 50px;
-  margin-right: 8px;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 19px;
 }
 
-.theme-switch::after {
-  content: "";
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
   position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 18px;
-  height: 18px;
-  background-color: #f0ab45;
-  border-radius: 50%;
-  transition-duration: 300ms;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
 }
 
-.theme-checkbox-input:checked + .theme-switch::after {
-  transform: translate(18px);
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
 }
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* body {
+  --bg-color: white;
+  --text-color: black;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: white;
+} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -1374,7 +1439,8 @@ footer {
   }
 
   .header-navigation {
-    margin-right: 48px;
+    /* margin-right: 48px; */
+    margin-right: 4px;
   }
 
   .header-list {
@@ -1383,6 +1449,25 @@ footer {
 
   .header-nav {
     display: flex;
+    gap: 4px;
+  }
+
+  .checkbox {
+    margin-right: 8px;
+  }
+
+  .checkbox p {
+    font-size: 14px;
+  }
+
+  .switch {
+    width: 40px;
+    height: 22px;
+  }
+
+  .slider:before {
+    height: 18px;
+    width: 18px;
   }
 
   .mob-menu-btn {
@@ -1643,6 +1728,30 @@ footer {
   .container {
     width: 1136px;
     padding: 0;
+  }
+
+  .checkbox {
+    margin-right: 14px;
+  }
+
+  .switch {
+    width: 50px;
+    height: 26px;
+  }
+
+  .slider:before {
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+
+  .header-nav {
+    gap: 14px;
   }
 
   .logo {
