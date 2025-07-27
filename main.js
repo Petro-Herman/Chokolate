@@ -13,8 +13,13 @@ function closeModal() {
 }
 
 openBtn.addEventListener("click", openModal);
-modal.addEventListener("click", closeModal);
 closeBtn.addEventListener("click", closeModal);
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {

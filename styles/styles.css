@@ -1413,19 +1413,6 @@ input:checked + .slider:before {
   transform: translateX(18px);
 }
 
-/* body {
-  --bg-color: white;
-  --text-color: black;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-
-body.dark-theme {
-  --bg-color: #121212;
-  --text-color: white;
-} */
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
